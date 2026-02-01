@@ -1,116 +1,46 @@
-# RISE Website - Modern React One-Pager
+# Getting Started with Create React App
 
-A high-quality, modern, conversion-focused one-page website for RISE Training & HR Solutions.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- ✨ Modern, premium design with smooth animations
-- 📱 Fully responsive (mobile-first approach)
-- 🎯 Conversion-optimized with strong CTAs
-- ⚡ Fast performance with Vite
-- 🎨 Clean, professional UI with rounded elements
-- 📊 Animated statistics counters
-- 💬 Floating WhatsApp button
-- 📧 Contact form with validation
-- 🔄 Smooth scroll navigation
+In the project directory, you can run:
 
-## Tech Stack
+### `npm start`
 
-- React 18
-- Vite
-- CSS3 (no external UI libraries)
-- Vanilla JavaScript (no heavy animation libraries)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Setup Instructions
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Follow these steps to get the website running:
+### `npm test`
 
-### 1. Navigate to project directory
-```bash
-cd /Users/hadikaddoura/Desktop/leads_websites/RISE/rise-website
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 2. Install dependencies
-```bash
-npm install
-```
+### `npm run build`
 
-### 3. Copy images to public folder
-```bash
-# Copy all images from Home_Rise_files to public/images
-cp -r ../Home_Rise_files/rise\ logo.png ./public/images/rise-logo.png
-cp -r ../Home_Rise_files/Training\ Solutions.avif ./public/images/training-solutions.avif
-cp -r ../Home_Rise_files/Coaching\ Solutions.avif ./public/images/coaching-solutions.avif
-cp -r ../Home_Rise_files/E-Learning.avif ./public/images/e-learning.avif
-cp -r ../Home_Rise_files/HR\ Consultancy.avif ./public/images/hr-consultancy.avif
-cp -r ../Home_Rise_files/\ WHAT\ DIFFERENTIATES\ US.avif ./public/images/differentiates-us.avif
-cp -r ../Home_Rise_files/Handshake\ pic.webp ./public/images/handshake.webp
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 4. Run development server
-```bash
-npm run dev
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-The website will open automatically at http://localhost:3000
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Build for Production
+### `npm run eject`
 
-```bash
-npm run build
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-The production-ready files will be in the `dist` folder.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Project Structure
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```
-rise-website/
-├── public/
-│   └── images/          # All website images
-├── src/
-│   ├── components/      # React components
-│   ├── styles/          # Component-specific CSS
-│   ├── App.jsx          # Main app component
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global styles
-├── index.html           # HTML template
-├── package.json         # Dependencies
-└── vite.config.js       # Vite configuration
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Customization
+## Learn More
 
-### Update WhatsApp Number
-Edit `src/components/WhatsAppButton.jsx` and replace the placeholder number:
-```javascript
-const whatsappNumber = 'YOUR_NUMBER_HERE'; // e.g., '971506669529'
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Update Contact Information
-Edit `src/components/Contact.jsx` and `src/components/Footer.jsx` to update:
-- Email addresses
-- Phone numbers
-- Physical address
-
-### Color Scheme
-Edit CSS variables in `src/index.css`:
-```css
-:root {
-  --primary-blue: #5C8DC5;
-  --secondary-blue: #6699CC;
-  --dark-blue: #3B5F8F;
-  /* ... other colors */
-}
-```
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-© 2024 RISE. All rights reserved.
+To learn React, check out the [React documentation](https://reactjs.org/).
