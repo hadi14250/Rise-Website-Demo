@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# Rise Global Modern
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive marketing website for Rise Global, built with React, TypeScript, and Tailwind CSS. The site showcases the company's consulting solutions, differentiators, client base, and contact options across a single-page experience with a dedicated Careers page.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- **React 19** + **TypeScript** (Create React App)
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **React Router** for navigation
+- **React Scroll** for smooth in-page section navigation
+- **EmailJS** for the contact form
+- **React Icons** for iconography
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Hero, About, Solutions, Differentiators, Clients, CTA, and Contact sections
+- Sticky navbar with smooth scrolling between sections
+- Animated transitions powered by Framer Motion
+- Contact form wired to EmailJS
+- Floating WhatsApp widget and scroll-to-top button
+- Careers page with its own route
+- Fully responsive layout
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+src/
+  components/
+    layout/      # Navbar, Footer, Layout
+    sections/    # Hero, About, Solutions, Differentiators, Clients, CTA, Contact
+    ui/          # Button, ServiceCard, SectionHeading, ScrollToTop, WhatsAppWidget
+  context/
+  hooks/
+  pages/         # Home, Careers
+  utils/
+public/
+  images/        # Logo and section imagery
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 18+ and npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+### Run in development
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Opens [http://localhost:3000](http://localhost:3000) with hot reload.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build for production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+Outputs an optimized bundle to the `build/` folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm test
+```
+
+## Environment Variables
+
+The contact form uses EmailJS. Create a `.env` file at the project root with your EmailJS credentials before using the form:
+
+```
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+## Deployment
+
+Any static host works (Vercel, Netlify, GitHub Pages, S3 + CloudFront). Run `npm run build` and serve the contents of `build/`.
